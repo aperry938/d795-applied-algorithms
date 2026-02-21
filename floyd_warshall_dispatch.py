@@ -163,7 +163,7 @@ def run_simulation():
             print(f"Warning: No route found for call {call_id} at {call_location}.")
 
     # 4. Write log file
-    log_file_path = 'ambulance_call_log_p2.csv' # Changed path for clarity
+    log_file_path = 'ambulance_call_log_floyd_warshall.csv'
     with open(log_file_path, mode='w', newline='', encoding='utf-8') as file:
         fieldnames = ["Call ID", "Call Type", "Call Location", "Selected Ambulance", "Time to Call Location"]
         writer = csv.DictWriter(file, fieldnames=fieldnames)
